@@ -61,8 +61,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Man must explore, and this is exploration at its greatest</h1>
-            <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
+            <h1>Control Interfaces and SDK</h1>
+            <h2 class="subheading">Giving your system a user interface</h2>
             <span class="meta">Posted by
               <a href="#">Start Bootstrap</a>
               on August 24, 2019</span>
@@ -103,6 +103,31 @@
 
           <p>The Isaac SDK is developed to support the control of mobile robots [14]. It has a structure similar to that of ROS with support for visualization, simulation, and more. The Isaac SDK is fundamentally based on the Isaac Robot Engine with support for a variety of math-planning and visualization algorithms [15]. Simulation is a key stage in robotics design and a critical component to prevent product failures [16]. The SDK package also includes tutorials for several basic packages controlling existing robots, such as the Kaya.  </p>
 
+          <h2 class="section-heading">TensorRT</h2>
+          
+          <p>TensorRT comes with the ONNX (Open Neural network Exchange) parser with support for video-processing and natural language processing [15]. It provides good support for general AI and machine-learning applications. The following diagram indicates how TensorRT functions within a larger system. On the diagram, below it is indicated that Tensorflow takes in one of the common machine-learning libraries and outputs directly to the physical hardware of the embedded system.</p>
+          
+          <h2 class="section-heading">GPGPU Access</h2>
+          
+          <p> CUDA (Compute Unified Device Architecture) is an Nvidia-produced GPGPU API designed by Nvidia to facilitate GPGPU programming for nonspecialists [17]. CUDA interacts directly with [the threads and GPU and allows users to specify what threads they want to be executed in parallel as well as if they would like for it to be executed on multiple GPUs. It is a lower-level coding language, specially developed by Nvidia for controlling their GPUs. CUDA has widespread implementations in deep learning, computational physics, and signal processing. CUDA code can be compiled directly on the GPU. </p>
+
+          <p> Nvidia also provides CUDA support in the form of the CUDA Toolkit, providing parallel algorithm support, CUDA signal processing, and CUDA linear algebra libraries [18]. This allows CUDA code to be easily fitted upon the existing C code [19]. There are alternatives to CUDA, but Nvidia support for CUDA in the form of continuous maintenance and Nvidia’s dominance of GPU technology, updates make it an ideal option. </p> 
+
+          <p> Of course, not all programmers are necessarily interested in diving into CUDA programming, and there are other interfaces to take command of the GPU. Some commonly applied libraries are OpenCL, OpenACC, Numba, and CUDA. These libraries allow programmers to have easy access to the GPU, and also allows them to execute traditional GPU applications, granting them powerful control over the specific application of the GPU. Numba is a python library with inbuilt functions that allow quick and easy access to the GPU, with specific lines to specify the parts of code to be executed in parallel. Numba is based around the syntax of NumPy and Scipy, common libraries for handling the representation of code as matrices for mathematical computation. Numba compiles simultaneously for the CPU and the GPU and dramatically increases array processing [20]. </p> 
+
+          <p> OpenACC provides similar support, though in the C language. OpenACC accomplishes parallel programming via a series of simple, easy-to-understand preprocessor directives. Once the environment has been properly set up, the parallelism is fairly straight-forward to achieve. However, OpenACC isn’t simply restricted to these low-level applications, and is powerful enough to give users control over the ways they desire to parallelize loops and allocate data [21].</p> 
+          
+          <h2 class="section-heading">Machine Learning Libraries</h2>
+          
+          <p> It must be emphasized, even with the application of GPGPU programming to other fields, the major application of GPU programming remains rooted in the area of machine learning and image processing. This means that an engineer working with a GPU should be familiar, if not fluent, with the common machine libraries used in industry. Tensorflow and PyTorch are among the most popular and widely-used.</p>
+
+          <p> Facebook’s PyTorch is an open-source, machine-learning library derived from the Torch, a repository of machine-learning libraries written in Lua. In simple terms, its two top-level functions are access to machine-learning algorithms and a NumPy based interface that supports the GPU-accelerated image processing. Broadly speaking, its API is divided into the following components: torchtext for natural language processing, torchaudio for spoken language processing, torchvision for image processing, and torch for general access to machine-learning algorithms. </p>
+
+          <p> Google Brain’s Tensorflow is written C++ with Python bindings. In Summer 2019, Google released Tensorflow2, a major overhaul of the previous version of Tensorflow. Though it has support for Java and Go, the most stable version of Tensorflow2 is the python version. Just as PyTorch implements the Torch interface, Tensorflow relies on the Keras machine-learning interface. Its API is more detailed but also harder to use as a beginner, with separate libraries for audio processing, data handling, debugging, and error checking, as well as a Keras API (tf.keras) for training models. </p>
+
+          <p> Both libraries can accomplish the same end-goal, but there are minor differences between the two that can dramatically influence project deadlines, depending on the needs of the individual engineer. PyTorch’s syntax is rooted in NumPy and is widely regarded as having better API documentation and support, but lacking a native data visualizer that Tensorflow provides, meaning that users will have to export data to an alternate visualizer to track the process of their programs. In addition, Tensorflow 2 is relatively new. Unlike other software updates, Tensorflow 2 dramatically overhauled the previous version of Tensorflow [22, 23]. While Tensorflow 2 promises advantages over the previous version, it is young and untested, meaning that programmers that run into issues have relatively fewer sources to consult compared to users of PyTorch. </p> 
+
+          
           <a href="#">
             <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
           </a>
