@@ -85,21 +85,23 @@
 
           <p>The SDK has a GUI which guides the user on setting up the Jetson as well as any additional packages that need to be installed [6]. This is the only way to put an operating system onto the Jetson. The SDK manager can be used later to update the SDK installation on the system [7].</p>
 
-          <p>The first and most important step is shown above. The targeted device should be specified. In the above image, this device is the Jetson. If the program does not detect the correct model, it will be necessary to set the correct hardware version. The Target Operating System specifies the OS to be installed. The OS will always be Linux but always double-check the documentation to ensure that the correct version of Linux is being installed (this is a decision made by the engineer). It is important to be clear about the parameters on this page. It is not possible to install the software incorrectly, but it is possible to install a different version than what is desired for the project.</p>
+          <p>Next, we will explore some other SDKs that Nvidia provides. These SDKs should give you a general idea of the various high-level applications that can be tackled using a GPU.</p>
 
-          <h2 class="section-heading">The Final Frontier</h2>
+          <h2 class="section-heading">Deepstream SDK</h2>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+          <p>The DeepStreak SDK is a computer-vision library that includes AI-based video processing with sensor processing. Deepstream relies on the Gstreamer paradigm for multimedia processing [8]. DeepStream is free of charge and downloadable from the Nvidia website. Be sure to consult the Nvidia website for the various compatibility requirements of each version of DeepStream [9].</p>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+          <p>DeepStream can be installed via Jetpack and comes with several demos to get an individual started on coding for machine learning and computer vision applications [10]. On a device that is set up, DeepStream can be installed via Ubuntu command “sudo apt-get”, if it was not installed via the SDK.</p>
 
+          <p>Nvidia DeepStream SDK is an important component of NVIDIA Metropolis, which has one of its applications collection vehicle taxes in Jakarta [10]. In the past, it has also been found on Tesla cars [11]. Many of the sample applications associated with this SDK are designed to run on self-driving cars [12].</p>
+          
           <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
 
           <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
 
-          <h2 class="section-heading">Reaching for the Stars</h2>
+          <h2 class="section-heading">Isaac SDK</h2>
 
-          <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
+          <p>The Isaac SDK is developed to support the control of mobile robots [14]. It has a structure similar to that of ROS with support for visualization, simulation, and more. The Isaac SDK is fundamentally based on the Isaac Robot Engine with support for a variety of math-planning and visualization algorithms [15]. Simulation is a key stage in robotics design and a critical component to prevent product failures [16]. The SDK package also includes tutorials for several basic packages controlling existing robots, such as the Kaya.  </p>
 
           <a href="#">
             <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
