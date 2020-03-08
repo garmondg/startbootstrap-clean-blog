@@ -77,15 +77,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+          <p>Nvidia provides many Software Development Kits (SDKs) that simplify any new engineer's interactions with GPUs. It is leaps and bounds above its competitors AMD and Intel in providing resources to hobbyists or individual engineers. (Nevertheless, all three companies actively engage in collaborations with universities and other corporations). SDKs are like coding libraries but designed to specifically suit the capabilities of an Nvidia system.</p>
 
-          <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+          <p>The JetPack SDK is probably the best place to start when approaching a new Nvidia system. It allows new users to set up their embedded devices with an operating system and proprietary software [5]. NVIDIA Jetpack is an SDK package equipped with several tools to assist in the building of AI applications, providing support to the AGX Xavier, TX2, TX1, and Jetson Nano. It is also referred to as the Nvidia SDK Manager.</p>
 
-          <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+          <p>The Nvidia SDK Manager requires two hardware components. First, the user must have a host computer running Ubuntu 16.04 or 18.04, a working Internet connection, and a Jetson device [5]. The host device must have a minimum of 40GB of free disk space whereas the Jetson must have at least 25GB of free disk space. Once a USB 2.0 connection has been established between the two devices, the Jetson can be easily set up with the host computer. </p>
 
-          <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+          <p>The SDK has a GUI which guides the user on setting up the Jetson as well as any additional packages that need to be installed [6]. This is the only way to put an operating system onto the Jetson. The SDK manager can be used later to update the SDK installation on the system [7].</p>
 
-          <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+          <p>The first and most important step is shown above. The targeted device should be specified. In the above image, this device is the Jetson. If the program does not detect the correct model, it will be necessary to set the correct hardware version. The Target Operating System specifies the OS to be installed. The OS will always be Linux but always double-check the documentation to ensure that the correct version of Linux is being installed (this is a decision made by the engineer). It is important to be clear about the parameters on this page. It is not possible to install the software incorrectly, but it is possible to install a different version than what is desired for the project.</p>
 
           <h2 class="section-heading">The Final Frontier</h2>
 
