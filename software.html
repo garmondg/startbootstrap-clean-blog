@@ -20,7 +20,10 @@
 
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
-
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
 <body>
@@ -79,7 +82,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <p>Nvidia provides many Software Development Kits (SDKs) that simplify any new engineer's interactions with GPUs. It is leaps and bounds above its competitors AMD and Intel in providing resources to hobbyists or individual engineers. (Nevertheless, all three companies actively engage in collaborations with universities and other corporations). SDKs are like coding libraries but designed to specifically suit the capabilities of an Nvidia system.</p>
 
-          <p>The JetPack SDK is probably the best place to start when approaching a new Nvidia system. It allows new users to set up their embedded devices with an operating system and proprietary software [5]. NVIDIA Jetpack is an SDK package equipped with several tools to assist in the building of AI applications, providing support to the AGX Xavier, TX2, TX1, and Jetson Nano. It is also referred to as the Nvidia SDK Manager.</p>
+          <p>The JetPack SDK is probably the best place to start when approaching a new Nvidia system. It allows new users to set up their embedded devices with an operating system and proprietary software <a href="index.html">[5]</a>. NVIDIA Jetpack is an SDK package equipped with several tools to assist in the building of AI applications, providing support to the AGX Xavier, TX2, TX1, and Jetson Nano. It is also referred to as the Nvidia SDK Manager.</p>
 
           <p>The Nvidia SDK Manager requires two hardware components. First, the user must have a host computer running Ubuntu 16.04 or 18.04, a working Internet connection, and a Jetson device [5]. The host device must have a minimum of 40GB of free disk space whereas the Jetson must have at least 25GB of free disk space. Once a USB 2.0 connection has been established between the two devices, the Jetson can be easily set up with the host computer. </p>
 
@@ -95,10 +98,6 @@
 
           <p>Nvidia DeepStream SDK is an important component of NVIDIA Metropolis, which has one of its applications collection vehicle taxes in Jakarta [10]. In the past, it has also been found on Tesla cars [11]. Many of the sample applications associated with this SDK are designed to run on self-driving cars [12].</p>
           
-          <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-          <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
           <h2 class="section-heading">Isaac SDK</h2>
 
           <p>The Isaac SDK is developed to support the control of mobile robots [14]. It has a structure similar to that of ROS with support for visualization, simulation, and more. The Isaac SDK is fundamentally based on the Isaac Robot Engine with support for a variety of math-planning and visualization algorithms [15]. Simulation is a key stage in robotics design and a critical component to prevent product failures [16]. The SDK package also includes tutorials for several basic packages controlling existing robots, such as the Kaya.  </p>
@@ -127,19 +126,23 @@
 
           <p> Both libraries can accomplish the same end-goal, but there are minor differences between the two that can dramatically influence project deadlines, depending on the needs of the individual engineer. PyTorch’s syntax is rooted in NumPy and is widely regarded as having better API documentation and support, but lacking a native data visualizer that Tensorflow provides, meaning that users will have to export data to an alternate visualizer to track the process of their programs. In addition, Tensorflow 2 is relatively new. Unlike other software updates, Tensorflow 2 dramatically overhauled the previous version of Tensorflow [22, 23]. While Tensorflow 2 promises advantages over the previous version, it is young and untested, meaning that programmers that run into issues have relatively fewer sources to consult compared to users of PyTorch. </p> 
 
-          
-          <a href="#">
-            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
-          </a>
-          <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+          <pre style="height: 500px; overflow: scroll;">
+		  <code>
+#include <iostream>
+using namespace std;
 
-          <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+int main() 
+{    
+    cout << "Size of char: " << sizeof(char) << " byte" << endl;
+    cout << "Size of int: " << sizeof(int) << " bytes" << endl;
+    cout << "Size of float: " << sizeof(float) << " bytes" << endl;
+    cout << "Size of double: " << sizeof(double) << " bytes" << endl;
 
-          <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+    return 0;
+}
 
-          <p>Placeholder text by
-            <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
-            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+		  </code>
+		  </pre>
         </div>
       </div>
     </div>
@@ -154,23 +157,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <ul class="list-inline text-center">
             <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
+              <a href="https://github.com/osusdgpu/osusdgpu.github.io">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-github fa-stack-1x fa-inverse"></i>
