@@ -2,4 +2,4 @@ This is the official GitHub page for OSU Senior Design Team 25 for the 2019-2020
 
 This GitHub repository serves as a place to store example files, as well as serve as an introduction to the Git coding language. 
 
-##Test
+<h1>The Contents of this Repository</h1>
