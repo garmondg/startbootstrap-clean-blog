@@ -91,10 +91,19 @@
           <p>Here are some online lecture notes on the area of GPGPU programming: </p>
           <p><a href="https://www.jics.utk.edu/files/images/csure-reu/PDF-DOC/GPGPU.pdf">GPGPU</a> </p>
           <p><a href="https://graphics.stanford.edu/~mhouston/public_talks/R520-mhouston.pdf">GPGPU</a> </p>
-          <p><a href="http://courses.cms.caltech.edu/cs179/">Caltech GPGPU Exam</a> </p>       
+        <p><a href="https://people.eecs.ku.edu/~jrmiller/Courses/675/Spring2020/index.html">EECS 675: Multicore and GPU Programming</a> 
+        at the university of Kansas.</p>
+          <p><a href="http://courses.cms.caltech.edu/cs179/">Caltech GPGPU Exam</a> </p>    
+        <p><a href="https://courses.cs.washington.edu/courses/cse471/13sp/lectures.html">CMPE 655</a>: Multiple Processor Systems </p>    
+          <p><a href="https://courses.cs.washington.edu/courses/cse471/13sp/lectures.html">CSE 471</a>: Computer Design & Organization at
+            University of Washington. </p>    
+          <p><a href="https://www.cs.utexas.edu/~fussell/courses/cs354/schedule.shtml">CS 354: Computer Graphics</a> at UT Austin</p>    
+        <p><a href="https://stim.ee.uh.edu/education/ece-6397-gpu-programming/">ECE 6397 - GPU Programming</a> at University of Houston</p>    
+        <p><a href="https://www.ece.lsu.edu/koppel/gp/">EE 7722: GPU Microarchitecture </a> at Lousiana State University </p>
+        https://engineering.purdue.edu/~smidkiff/ece563/
 
         <h2 class="section-heading">Textbooks</h2>
-          <p>Therer are several GPU textbooks on the market. This section go over the application specific ones. There is one Nvidia
+          <p>There are several GPU textbooks on the market. This section go over the application specific ones. There is one Nvidia
             sponsored titled GPGPU Gems, though for the most part, this is targetted at game graphics programmers. It is still a 
             valuable source, but perhaps daunting for beginners. Finally, due to the rapidly changes common to this field, a number
             of good resources are to be found in online documentation, rather than in published textbooks. Furthermore, Nvidia hosts a 
@@ -110,7 +119,7 @@
   
       <p><a href="https://developer.nvidia.com/cuda-example">CUDA By Example</a>, published by Nvidia with a strong focus on specific programming applications.</p> 
    
-      <p><a href="http://www.cudahandbook.com/"></a>The CUDA Handbook, great as a general introduction.</p> 
+      <p><a href="http://www.cudahandbook.com/">The CUDA Handbook</a>, great as a general introduction.</p> 
      
       <p><a href="https://www.oreilly.com/library/view/cuda-for-engineers/9780134177540/">CUDA for Engineers: An Introduction to 
         High-Performance Parallel Computing</a>, CUDA C++ programming guide, ostensibly targetted at engineers. </p> 
@@ -127,21 +136,28 @@
       an intro-level book dealing with GPU programming on MATLAB.</p>       
       
         <h2 class="section-heading">Research</h2>
-          <p>GPUs are promising area of research and there are number of dedicated researchers working in the field.</p>
+          <p>GPUs are promising area of research and there are number of dedicated researchers working in the field, both 
+      within industry and academia. The bulk of researchers are focused on graphics and computer-vision applications as that
+      was the original targeted area of GPUs, but a number of researchers are emerging in the broader areas including
+      robotics and VLSI. </p>
         
-         <p><a href="http://graphics.stanford.edu/~levoy/">Mark Levoy</a> </p>   
-         <p><a href="https://web.engr.oregonstate.edu/~chenliz/">Lizhong Chen</a> </p>   
-         <p><a href="https://www.nvidia.com/en-us/research/">Research at Nvidia</a> </p>
-         <p><a href="https://www.parashar.org/?page_id=5">Angshuman Parashar</a> </p>  
-         <p><a href="https://https://faculty.ucmerced.edu/mhyang/">Ming-Hsuan Yang</a> </p>  
+         <p><a href="http://graphics.stanford.edu/~levoy/">Mark Levoy</a> is research at Google whose work focuses on 
+      computer graphics. </p>   
+              <p><a href="http://vllab.ucmerced.edu/">Ming-Hsuan Yang</a>'s research is rooted in computer vision, applying
+      GPU to segment and track objects in images. These approaches include image-processing to improve recognition. </p>  
+         <p><a href="https://web.engr.oregonstate.edu/~chenliz/">Lizhong Chen</a>'s GPU research focuses on data bottlenecks 
+      and effective GPU usage in GPU processors.</p>   
+         <p><a href="https://www.nvidia.com/en-us/research/">Nvidia</a> sponsors a good deal of research with subjects ranging from
+      VLSI and networking to robotics and AI.</p>
+         <p><a href="https://www.parashar.org/?page_id=5">Angshuman Parashar</a>'s research focuses on GPUs and machine-learning
+      applications for FPGAs.</p>  
          <p><a href="https://www.nvidia.com/en-us/research/circuits-vlsi/">VLSI Research</a> </p>
          <p><a href="https://research.nvidia.com/research-area/robotics">Robotics</a> </p>  
-         <p><a href="http://www.markmark.net/">Robotics</a> </p>  
+         <p><a href="http://www.markmark.net/">Mark Harris</a>' focus is on real-time image processing and graphics. </p>  
+         <p><a href="https://people.eecs.berkeley.edu/~aydin/">Aydın Buluç</a></p>  
+      <p><a href="https://web.eecs.umich.edu/~valeria/research/">Valeria Bertacco</a></p>  
         
-        
-        <h2 class="section-heading">Relevant Coding Libraries</h2>
-          
-          <h3 class="section-heading"><Machine Learning</h3>
+        <h2 class="section-heading">Code APIs</h2>
             
           <p> <b><a href="https://pytorch.org/">PyTorch</a></b> </p>             
             
@@ -152,17 +168,12 @@
           <p> <b><a href="http://courses.cms.caltech.edu/cs179/">Theano</a></b> </p>   
             
           <p> <b><a href="http://caffe.berkeleyvision.org/">Caffe</a></b> </p> 
-            
-            
-          <h3 class="section-heading"><GPGPU</h3>
-            
+     
           <p> <a href="https://developer.nvidia.com/cuda-zone">CUDA</a> </p>  
             
           <p> <b><a href="https://developer.nvidia.com/openacc">OpenACC</a></b> </p>  
             
           <p> <b><a href="https://www.khronos.org/opencl/">OpenCL</a></b> </p>                        
-            
-          <h3 class="section-heading"><Other</h3>
             
           <p> <b><a href="https://www.ffmpeg.org/">FFMPEG</a></b> </p>  
             
