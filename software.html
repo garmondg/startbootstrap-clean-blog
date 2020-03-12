@@ -81,7 +81,14 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
 	  <h1 class="section-heading">General Purpose Computing</h2>
-		
+		<p>Though GPUs were originally developed for graphical-processing, their parallelism and speed facilitatd the 
+	           development of general-purpose GPU computing (GPGPU), non-graphics applications of GPUs implemented to speed
+		   up programs. Since its unveiling in 2001, GPGPU programming has spawned a host of programming paradigms that
+			give users access to their GPU through API allowing them to customize function. GPGPU programming finds various
+			applications from DNA analysis, search algorithms, and molecular simulations.</p>
+		<p> What the listed applications have in common is parallelism and throughput. These take advantage of GPU to 
+			process many simple elements in parallel at great speeds. This is incredibly ideal for molecular simulations,
+			but also useful for image processing, especially on the pixel level.</p>
 		
           <h2 class="section-heading">GPGPU Access</h2>
           
@@ -101,7 +108,14 @@
 	      interfaces to take command of the GPU. Some commonly applied libraries are OpenCL, OpenACC, Numba, and CUDA. 
 	      These libraries allow programmers to have easy access to the GPU, and also allows them to execute traditional GPU 
 	      applications, granting them powerful control over the specific application of the GPU. Numba is a python library 
-	      with inbuilt functions that allow quick and easy access to the GPU, with specific lines to specify the parts of code to be executed in parallel. Numba is based around the syntax of NumPy and Scipy, common libraries for handling the representation of code as matrices for mathematical computation. Numba compiles simultaneously for the CPU and the GPU and dramatically increases array processing [20]. </p> 
+	      with inbuilt functions that allow quick and easy access to the GPU, with specific lines to specify the parts of code 
+	      to be executed in parallel. Numba is based around the syntax of NumPy and Scipy, common libraries for handling the 
+	      representation of code as matrices for mathematical computation. Numba compiles simultaneously for the CPU and the GPU 
+	      and dramatically increases array processing [20]. </p> 
+		
+	  <p> OpenCL and CUDA are the dominant frameworks. OpenCL is open-source and has support on Intel, AMD< Nvidia, and ARM 
+	      platforms. While CUDA is proprietary, it is well-supported by NVidia and widely used. Furthermore, taking into 
+	      account Nvidia's dominance in the market, it is not at all a bad choice.</p>
 
           <p> OpenACC provides similar support, though in the C language. OpenACC accomplishes parallel programming via a series of 
 	      simple, easy-to-understand preprocessor directives. Once the environment has been properly set up, the parallelism is 
