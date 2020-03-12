@@ -80,6 +80,34 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+	  <h1 class="section-heading">General Purpose Computing</h2>
+		
+		
+          <h2 class="section-heading">GPGPU Access</h2>
+          
+          <p> CUDA (Compute Unified Device Architecture) is an Nvidia-produced GPGPU API designed by Nvidia to facilitate GPGPU 
+	      programming for nonspecialists. CUDA interacts directly with [the threads and GPU and allows users to specify what
+	      threads they want to be executed in parallel as well as if they would like for it to be executed on multiple GPUs. 
+	      It is a lower-level coding language, specially developed by Nvidia for controlling their GPUs. CUDA has widespread 
+	      implementations in deep learning, computational physics, and signal processing. CUDA code can be compiled directly 
+	      on the GPU. </p>
+
+          <p> Nvidia also provides CUDA support in the form of the CUDA Toolkit, providing parallel algorithm support, CUDA signal
+	      processing, and CUDA linear algebra libraries. This allows CUDA code to be easily fitted upon the existing C 
+	      code. There are alternatives to CUDA, but Nvidia support for CUDA in the form of continuous maintenance and Nvidia’s
+	      dominance of GPU technology, updates make it an ideal option. </p> 
+
+          <p> Of course, not all programmers are necessarily interested in diving into CUDA programming, and there are other 
+	      interfaces to take command of the GPU. Some commonly applied libraries are OpenCL, OpenACC, Numba, and CUDA. 
+	      These libraries allow programmers to have easy access to the GPU, and also allows them to execute traditional GPU 
+	      applications, granting them powerful control over the specific application of the GPU. Numba is a python library 
+	      with inbuilt functions that allow quick and easy access to the GPU, with specific lines to specify the parts of code to be executed in parallel. Numba is based around the syntax of NumPy and Scipy, common libraries for handling the representation of code as matrices for mathematical computation. Numba compiles simultaneously for the CPU and the GPU and dramatically increases array processing [20]. </p> 
+
+          <p> OpenACC provides similar support, though in the C language. OpenACC accomplishes parallel programming via a series of 
+	      simple, easy-to-understand preprocessor directives. Once the environment has been properly set up, the parallelism is 
+	      fairly straight-forward to achieve. However, OpenACC isn’t simply restricted to these low-level applications, and is 
+	      powerful enough to give users control over the ways they desire to parallelize loops and allocate data.</p> 
+		
           <p>Nvidia provides many Software Development Kits (SDKs) that simplify any new engineer's interactions with GPUs. It is leaps and bounds above its competitors AMD and Intel in providing resources to hobbyists or individual engineers. (Nevertheless, all three companies actively engage in collaborations with universities and other corporations). SDKs are like coding libraries but designed to specifically suit the capabilities of an Nvidia system.</p>
 
           <p>The JetPack SDK is probably the best place to start when approaching a new Nvidia system. It allows new users to set up their embedded devices with an operating system and proprietary software <a href="index.html">[5]</a>. NVIDIA Jetpack is an SDK package equipped with several tools to assist in the building of AI applications, providing support to the AGX Xavier, TX2, TX1, and Jetson Nano. It is also referred to as the Nvidia SDK Manager.</p>
@@ -105,16 +133,7 @@
           <h2 class="section-heading">TensorRT</h2>
           
           <p>TensorRT comes with the ONNX (Open Neural network Exchange) parser with support for video-processing and natural language processing [15]. It provides good support for general AI and machine-learning applications. The following diagram indicates how TensorRT functions within a larger system. On the diagram, below it is indicated that Tensorflow takes in one of the common machine-learning libraries and outputs directly to the physical hardware of the embedded system.</p>
-          
-          <h2 class="section-heading">GPGPU Access</h2>
-          
-          <p> CUDA (Compute Unified Device Architecture) is an Nvidia-produced GPGPU API designed by Nvidia to facilitate GPGPU programming for nonspecialists [17]. CUDA interacts directly with [the threads and GPU and allows users to specify what threads they want to be executed in parallel as well as if they would like for it to be executed on multiple GPUs. It is a lower-level coding language, specially developed by Nvidia for controlling their GPUs. CUDA has widespread implementations in deep learning, computational physics, and signal processing. CUDA code can be compiled directly on the GPU. </p>
-
-          <p> Nvidia also provides CUDA support in the form of the CUDA Toolkit, providing parallel algorithm support, CUDA signal processing, and CUDA linear algebra libraries [18]. This allows CUDA code to be easily fitted upon the existing C code [19]. There are alternatives to CUDA, but Nvidia support for CUDA in the form of continuous maintenance and Nvidia’s dominance of GPU technology, updates make it an ideal option. </p> 
-
-          <p> Of course, not all programmers are necessarily interested in diving into CUDA programming, and there are other interfaces to take command of the GPU. Some commonly applied libraries are OpenCL, OpenACC, Numba, and CUDA. These libraries allow programmers to have easy access to the GPU, and also allows them to execute traditional GPU applications, granting them powerful control over the specific application of the GPU. Numba is a python library with inbuilt functions that allow quick and easy access to the GPU, with specific lines to specify the parts of code to be executed in parallel. Numba is based around the syntax of NumPy and Scipy, common libraries for handling the representation of code as matrices for mathematical computation. Numba compiles simultaneously for the CPU and the GPU and dramatically increases array processing [20]. </p> 
-
-          <p> OpenACC provides similar support, though in the C language. OpenACC accomplishes parallel programming via a series of simple, easy-to-understand preprocessor directives. Once the environment has been properly set up, the parallelism is fairly straight-forward to achieve. However, OpenACC isn’t simply restricted to these low-level applications, and is powerful enough to give users control over the ways they desire to parallelize loops and allocate data [21].</p> 
+         
           
           <h2 class="section-heading">Machine Learning Libraries</h2>
           
