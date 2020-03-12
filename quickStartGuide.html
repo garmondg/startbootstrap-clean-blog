@@ -89,7 +89,7 @@
         <h2 class="section-heading">How to Install Jetson JetPack SDK</h2>
           <p>Before installation, a download of the installer for the SDK is required. The most recent release of the pack can be downloaded from <a href="https://developer.nvidia.com/embedded/jetpack">NVIDIA Developer Zone</a>. Be sure that your computer meets the system requirements listed above before continuing in the process. Create a new directory to hold the pack, and be sure the installer is placed inside of it.</p>
         
-        <h3 class="section-heading">Preparing the Installer</h3>
+        <h3>Preparing the Installer</h3>
         
           <p>The first thing to do is to give administrative privileges to the installer, which can be done using the following command in the terminal.</p>
         
@@ -99,7 +99,7 @@
         
             <code>JetPack-${VERSION}.run</code>
         
-        <h3 class="section-heading">Running the Installer</h3>
+        <h3>Running the Installer</h3>
         
           <p>Skip through a few steps until you reach the page that asks you to select your development environment. Here, you have to choose whether you're using the Jetson TK1 or TX1. Be sure you choose the kit that you purchased, or else you will have to rerun the installation.</p>
         
@@ -109,24 +109,24 @@
         
         <p>The next steps are determined by which components you chose to install.</p>
         
-        <h3 class="section-heading">If you Installed Flash OS</h3>
+        <h3>If you Installed Flash OS</h3>
         <p>If you installed Flash OS, then you will need to select the network layout you will be using for this project. If you expect your Jetson to connect directly to the internet, then select the first option. However, if your Jetson will need to go through the host computer to access the internet, choose the second one.</p>
         
-        <h4 class="section-heading">If you Chose "Device access Internet via router/switch"</h3>
+        <h4>If you Chose "Device access Internet via router/switch"</h3>
         
         <p>If you chose this option, select which interface will be used to access the internet.</p>
         
-        <h4 class="section-heading">If you Chose "Device get IP assigned by DHCP server on host and access Internet via host machine"</h3>
+        <h4>If you Chose "Device get IP assigned by DHCP server on host and access Internet via host machine"</h3>
         <p>If you chose this option, select which interface will be used to access the internet, as well as which one will be used as the target interface.
         
-        <h4 class="section-heading">Flashing the OS</h4>
+        <h4>Flashing the OS</h4>
         <p>Follow the insturctions on the screen to put your device into Force USB Recovery Mode, so the Operating System can be Flashed onto the device.
         
-        <h3 class="section-heading">If you Didn't Install Flash OS</h3>
+        <h3>If you Didn't Install Flash OS</h3>
         
         <p>Alternatively, if you chose not to install Flash OS, you will need to put in the information for the target device. Fill in the IP address and login information for the device. </p>
         
-        <h2 class="section-heading">Post-Installation</hw>
+        <h2>Post-Installation</h2>
         
         <p>The components can now be downloaded to the target machine. A full list of actions should be shown on the screen now; this is referred to as the post-installation process. Hit the next button, and, once it's complete, the installation will be done. You may choose whether or not to delete the dummied out downloaded files, and then hit the finish button to close the installer. Jetpack has now been installed on the machine.</p>
             
