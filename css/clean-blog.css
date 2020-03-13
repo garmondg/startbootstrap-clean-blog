@@ -411,6 +411,12 @@ footer .copyright {
 }
 
 
+/*----- Drop-Down Menu -----*/
+.menu li:hover .sub-menu {
+	z-index:1;
+	opacity:1;
+}
+
 .sub-menu {
 	width:160%;
 	padding:5px 0px;
