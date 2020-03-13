@@ -174,6 +174,36 @@
           <p> Google Brain’s Tensorflow is written C++ with Python bindings. In Summer 2019, Google released Tensorflow2, a major overhaul of the previous version of Tensorflow. Though it has support for Java and Go, the most stable version of Tensorflow2 is the python version. Just as PyTorch implements the Torch interface, Tensorflow relies on the Keras machine-learning interface. Its API is more detailed but also harder to use as a beginner, with separate libraries for audio processing, data handling, debugging, and error checking, as well as a Keras API (tf.keras) for training models. </p>
 
           <p> Both libraries can accomplish the same end-goal, but there are minor differences between the two that can dramatically influence project deadlines, depending on the needs of the individual engineer. PyTorch’s syntax is rooted in NumPy and is widely regarded as having better API documentation and support, but lacking a native data visualizer that Tensorflow provides, meaning that users will have to export data to an alternate visualizer to track the process of their programs. In addition, Tensorflow 2 is relatively new. Unlike other software updates, Tensorflow 2 dramatically overhauled the previous version of Tensorflow [22, 23]. While Tensorflow 2 promises advantages over the previous version, it is young and untested, meaning that programmers that run into issues have relatively fewer sources to consult compared to users of PyTorch. </p> 
+		
+	<h2 class="section-heading">Introduction to Git</h2>
+
+	<p>Git is a software development tool that allows for the tracking of changes to files. It is the base code that GitHub itself runs on. As such, understanding it is important to understanding GitHub as a whole. This section of the ReadMe will serve as a basic tutorial for the Git command line. </p>
+
+	<h3>Step 1: Installing Git</h3>
+
+	<p>To start, you will need to download Git. If you have a Windows computer, click <a href=https://git-scm.com/download/win">here</a>. On macOS, open up OSX Terminal and type <code>git --version</code>, and you will be prompted to install it if it was not already. </p>
+  
+	<h3>Step 2: Using the terminal to create a repository.</h3>
+
+	<p>Open up your terminal (Windows Command Prompt on Windows or OS X Terminal on Macintosh). First, type in the word "git", and hit enter, just to make sure it installed correctly. From there, it's time to create the folder to host your repository. Type <code>mkdir folderName</code>, where folderName is the name of your repository. This will create a folder (or, director) with that name. To enter that folder, type <code>cd folderName</code>. </p>
+
+	<h3>Step 3: Creating the ReadMe</h3>
+
+	<p>The ReadMe file in a repository contains information about the other files in the repository. It should say what's included in the repository, like is seen in the first section of this file. In order to create a ReadMe for your preexisting directory, like the one you're in now,, type <code>echo "# folderName" >> README.md</code>.</p>
+	<p>With the ReadMe created, it's time to access Git. Type <code>git init</code> to intiialize Git within this directory. Now, it's always good to know when changes have occued to a file. To do so, type <code>git add README.md</code>. You can do this for any file that you want the history of changes to be saved for.</p> 
+
+	<h3>Step 4: Creating a Commit</h3>
+	<p>A "Commit", in the Git world, is more or less how you save a change to a repository. It is a statement that you are commiting to the changes that you have made. In order to do this for the first time in a directory, type <code>git commit -m "first commit"</code>. </p>
+
+	<h3>Step 5: Creating a GitHub repository</h3>
+
+	<p>Now, you'll need to be sure you have a Github account. Once you do, go to <a href="github.com">the GitHub website</a> and choose "Start a project".</p>
+	<p>From here, you will find yourself entering the basic information for your repository. The name, the owner, whether or not the project is publicly accessible, etc. Once all that is filmed out, click "Create repository".</p>
+
+	<h2>Step 6: Exporting a respository to GitHub</h2>
+
+	<p>It's finally time to upload this directory to GitHub. From the command terminal, type <code>git remote add origin https://github.com/yourUsername/folderName.git</code>. This code adds a remote named Origin to the address listed in the code. Origin is just a placehoder name, so if you want to use another name you can.</p>
+
 
           <pre style="height: 500px; overflow: scroll;">
 		  <code>
