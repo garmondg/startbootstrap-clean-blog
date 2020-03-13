@@ -22,4 +22,13 @@ This GitHub repository serves as a place to store example files, as well as serv
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/gulpfile.js">gulpfile.js File</a>: A Javascript file that contains ???.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/gitIntro.html">hardware.html File</a>: A file that contains the contents of the Hardware webpage.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/index.html">index.html File</a>: A file that contains the contents of the Home webpage.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/package-lock.json">package-lock.json File</a>: A file that contains the contents of the Home webpage.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/index.html">index.html File</a>: A file that contains the contents of the Home webpage.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/package-lock.json">package-lock.json File</a>: A json file that locks dependencies to a software version.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/package.json">package.json File</a>: A file that defines dependencies, project properties, lisence information, etc.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/pytorch.html">pytorch.html File</a>: A file that contains the contents of the Pytorch webpage.</li>ster/index.html">index.html File</a>: A file that contains the contents of the Home webpage.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/quickStartGuide.html">quickStartGuide.html File</a>: A file that contains the contents of the Quickstart Guide webpage.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/resources.html">resource.html File</a>: A file that contains the contents of the Resources webpage.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/sdk.html">sdk.html File</a>: A file that contains the contents of the Nvidia SDKs webpage.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/index.html">software.html File</a>: A file that contains the contents of the Software webpage.</li>
 </ul>
