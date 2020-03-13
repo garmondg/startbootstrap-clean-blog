@@ -109,6 +109,30 @@
 		  </code>
 		  </pre>
 
+		<h2 class="subheading">Accessing the GPU</h2>
+		<p> Accessing the GPU info is starighforward and well-defined under torch.cuda.</p>
+       
+		<pre style="height: 500px; overflow: scroll;">
+		  <code>
+		  import torch #torch gives full access to 
+		  cuda.init() #initializer for CUDA
+		  cuda.Device(0).name #returns the name of GPUs, 0 indicates the first of possibly many
+		  </code>
+		  </pre>
+		
+		<h2 class="subheading">Parallel Programming</h2>
+		<p> </p>
+		<code>
+			a = torch.DoubleTensor([1., 2.])
+		  </code>
+		  </pre>
+		<p> </p>
+		<code>
+	      a = torch.FloatTensor([1., 2.]).cuda()
+	        </code>
+		  </pre>
+	    <p> </p>
+		
         </div>
       </div>
     </div>
