@@ -67,7 +67,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Software Interfaces</h1>
+            <h1>PyTorch</h1>
             <h2 class="subheading">Common applications</h2>
           </div>
         </div>
@@ -80,22 +80,32 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+		<p> PyTorch is quickly becoming the hottest machine-learning. The following examples should get you started
+		    on basic PyTorch applications.</p>
+		
+
+		<h2 class="subheading">Loading a Dataset</h2>
+		<p> Machine learning algorithms can generate models which are then easily used by other applications. PyTorch,
+			like other application interfaces allow for quick loading of existing models. Though PyTorch comes with
+			existing models, you may have to find models from other resources online. The following is an example of
+			how to load the DarkNet dataset.
+		</p>
+		    
 
           <pre style="height: 500px; overflow: scroll;">
 		  <code>
-#include <iostream>
-using namespace std;
-
-int main() 
-{    
-    cout << "Size of char: " << sizeof(char) << " byte" << endl;
-    cout << "Size of int: " << sizeof(int) << " bytes" << endl;
-    cout << "Size of float: " << sizeof(float) << " bytes" << endl;
-    cout << "Size of double: " << sizeof(double) << " bytes" << endl;
-
-    return 0;
-}
-
+		  config_path='config/yolov3.cfg'
+		  weights_path='config/yolov3.weights'
+		  class_path='config/coco.names'
+		  img_size=416
+		  conf_thres=0.8
+		  nms_thres=0.4
+		  
+		  # load model and put into eval mode
+		  model = Darknet(config_path, img_size=img_size)
+		  model.load_weights(weights_path)
+		  model.cuda()
+		  model.eval()
 		  </code>
 		  </pre>
 
