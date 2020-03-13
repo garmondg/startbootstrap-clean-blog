@@ -89,6 +89,8 @@
         <h2 class="section-heading">How to Install Jetson JetPack SDK</h2>
           <p>Before installation, a download of the installer for the SDK is required. The most recent release of the pack can be downloaded from <a href="https://developer.nvidia.com/embedded/jetpack">NVIDIA Developer Zone</a>. Be sure that your computer meets the system requirements listed above before continuing in the process. Create a new directory to hold the pack, and be sure the installer is placed inside of it.</p>
         
+        <h3>Preparing the Installer</h3>
+        
           <p>The first thing to do is to give administrative privileges to the installer, which can be done using the following command in the terminal.</p>
         
         <code>chmod +x JetPack-${VERSION}.run</code>
@@ -97,14 +99,59 @@
         
             <code>JetPack-${VERSION}.run</code>
         
-          <p>Skip through a few steps until you reach the page that asks you to select your development environment. Here, you have to choose whether you're using the Jetson TK1 or TX1. Be sure you choose the kit that you purchased, or else you will have to rerun the installation.</p>
+        <h3>Running the Installer</h3>
+        
+          <p>Skip through a few steps until you reach the page that asks you to select your development environment. Here, you have to choose whether you're using the Jetson TK1 or TX1. Be sure you choose the kit that you purchased, or else you will have to rerun the installation. For this tutorial, we chose to use the TX1.</p>
         
         <p>Next, you will need to give permission for the installer to run. Type in your sudo password when requested to. With that complete, the Component Manager will open, allowing you to choose exactly which components you will be using. Take some time to choose the correct kit and customize your installation to be the most efficient for your needs. If you're unsure what a specific component is, the text box at the bottom of the window will give a short description of the one highlighted.</p> 
         
         <p> That completed, you only need to accept the lisencing agreement before the installment will begin. When the basic installation is complete, hit next so that the components you selected are installed as well.</p>
         
-        <p>The next step depends on whether or not you chose to install Flash OS in the Component Manager. If you did, then you will need to select the network layout you will be using for this project. If you expect your Jetson to connect directly to the internet, then select the first option. However, if your Jetson will need to go through the host computer to access the internet, choose the second one.</p>
-        <p>Alternatively, if you chose not to install Flash OS, you will need to put in the information for the target device. Fill in the IP address and login information for the device. 
+        <p>The next steps are determined by which components you chose to install.</p>
+        
+        <h3>If you Installed Flash OS</h3>
+        <p>If you installed Flash OS, then you will need to select the network layout you will be using for this project. If you expect your Jetson to connect directly to the internet, then select the first option. However, if your Jetson will need to go through the host computer to access the internet, choose the second one.</p>
+        
+        <h4>If you Chose "Device access Internet via router/switch"</h3>
+        
+        <p>If you chose this option, select which interface will be used to access the internet.</p>
+        
+        <h4>If you Chose "Device get IP assigned by DHCP server on host and access Internet via host machine"</h3>
+        <p>If you chose this option, select which interface will be used to access the internet, as well as which one will be used as the target interface.
+        
+        <h4>Flashing the OS</h4>
+        <p>Follow the insturctions on the screen to put your device into Force USB Recovery Mode, so the Operating System can be Flashed onto the device. This is the option suggested for first-time users.</p>
+        
+        <h3>If you Didn't Install Flash OS</h3>
+        
+        <p>Alternatively, if you chose not to install Flash OS, you will need to put in the information for the target device. Fill in the IP address and login information for the device. </p>
+        
+        <h2>Post-Installation</h2>
+        
+        <p>The components can now be downloaded to the target machine. A full list of actions should be shown on the screen now; this is referred to as the post-installation process. Hit the next button, and, once it's complete, the installation will be done. You may choose whether or not to delete the dummied out downloaded files, and then hit the finish button to close the installer. Jetpack has now been installed on the machine.</p>
+        
+      <h2 class="section-heading">Onboard Software</h2>
+        
+      <p>The "Jetson Software Stack" is a group of software that all Jetson processors can run. A brief introduction toa few of them can is listed below.</p>
+        
+<img src="img/embedded-jetson-sw-stack-diagram-update-990573-r3.jpg">
+        <p>Image courtesy of NVIDIA</p>
+        
+        <h3>DeepStream SDK</h3>
+        
+        <p>DeepStream SDK is an analytics kit that provides tools for AI development, image understanding, and multi-sensor processing. It allows for visualization of rich data, allowing for a better understanding of how the GPU is processing that data. More information can be found <a href="https://developer.nvidia.com/deepstream-sdk">here</a>.</p>
+        
+        <h3>Isaac SDK</h3>
+          
+        <p>Isaac SDK is a robot AI development platform created by NVIDIA. It provides a framework, references, precreated algorithms, and an advanced simulation platform in order to allow for AI to be fully designed before it is implemented in the robot. More information can be found <a href="https://developer.nvidia.com/isaac-sdk">here</a>.</p>
+        
+        <h3>JetPack SDK</h3>
+        
+        <p>The JetPack SDK is a suite of tools desgined specifically for use with the Jetson series of processors. It's the most efficient way to install developer tools and libraries, as well as to program the Jetson. It also provides updated versions of popular tools such as TensorRT and cuDNN. More information can be found <a href="https://developer.nvidia.com/embedded/jetpack">here</a>.</p>
+        
+        <h3>Nsight Developer Tools</h3>
+        
+        <p>The Nsight Developer Tools are a trio of linked tools that help developers optimize the performance of their processors. The first of these is Nsight Systems, which analyzes workload-level performance, optimizing the synchronization of the different parts of the system. The next is Nsight Compute, which analyzes the performance at the Kernel level, optimizing memory access, kernel implementation, and teh utilization of the GPU. The third and final part of the set is Nsight Graphics, which analyzes performance frame-by-frame. Shaders, frame rendering, and synchronization are all optimized by this tool. The developer can go back and forth between all three of these cyclically until such a time as the performance meets expectations. More information can be found <a href="https://developer.nvidia.com/tools-overview">here</a>.</p>
             
       </div>
     </div>

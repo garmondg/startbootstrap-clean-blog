@@ -45,10 +45,10 @@
             <a class="nav-link" href="quickStartGuide.html">QUICK START GUIDE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="software.html">SOFTWARE</a>
+            <a class="nav-link" href="hardware.html">HARDWARE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="hardware.html">HARDWARE</a>
+            <a class="nav-link" href="software.html">SOFTWARE</a>
           <li class="nav-item">
             <a class="nav-link" href="resources.html">RESOURCES</a>
           </li>
@@ -64,11 +64,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Control Interfaces and SDK</h1>
-            <h2 class="subheading">Giving your system a user interface</h2>
-            <span class="meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on August 24, 2019</span>
+            <h1>Software Interfaces</h1>
+            <h2 class="subheading">Common applications</h2>
           </div>
         </div>
       </div>
@@ -81,38 +78,48 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
 	  <h1 class="section-heading">General Purpose Computing</h2>
-		
+		<p>Though GPUs were originally developed for graphical-processing, their parallelism and speed facilitatd the 
+	           development of general-purpose GPU computing (GPGPU), non-graphics applications of GPUs implemented to speed
+		   up programs. Since its unveiling in 2001, GPGPU programming has spawned a host of programming paradigms that
+			give users access to their GPU through API allowing them to customize function. GPGPU programming finds various
+			applications from DNA analysis, search algorithms, and molecular simulations.</p>
+		<p> What the listed applications have in common is parallelism and throughput. These take advantage of GPU to 
+			process many simple elements in parallel at great speeds. This is incredibly ideal for molecular simulations,
+			but also useful for image processing, especially on the pixel level.</p>
 		
           <h2 class="section-heading">GPGPU Access</h2>
-          
-          <p> CUDA (Compute Unified Device Architecture) is an Nvidia-produced GPGPU API designed by Nvidia to facilitate GPGPU 
-	      programming for nonspecialists. CUDA interacts directly with [the threads and GPU and allows users to specify what
-	      threads they want to be executed in parallel as well as if they would like for it to be executed on multiple GPUs. 
-	      It is a lower-level coding language, specially developed by Nvidia for controlling their GPUs. CUDA has widespread 
-	      implementations in deep learning, computational physics, and signal processing. CUDA code can be compiled directly 
-	      on the GPU. </p>
-
-          <p> Nvidia also provides CUDA support in the form of the CUDA Toolkit, providing parallel algorithm support, CUDA signal
-	      processing, and CUDA linear algebra libraries. This allows CUDA code to be easily fitted upon the existing C 
-	      code. There are alternatives to CUDA, but Nvidia support for CUDA in the form of continuous maintenance and Nvidia’s
-	      dominance of GPU technology, updates make it an ideal option. </p> 
+		<p> There exist several common libraries to facilitate GPGPU programming. These include the Nvidia's CUDA and Khronos
+			Group's OpenCL. Both libraries require downloads from the web and in Nvidia's case a special compiler, nvcc. 
+			OpenCL is open-source and has support on Intel, AMD< Nvidia, and ARM platforms. While CUDA is proprietary, it 
+			is well-supported by NVidia and widely used. Furthermore, taking into account </p>
+		<p> CUDA (Compute Unified Device Architecture) is an Nvidia-produced GPGPU API designed for nonspecialists. CUDA 
+			interacts directly with GPU threads and allows users to specify what threads they want to be executed in 
+			parallel as well as if they would like for it to be executed on multiple GPUs. Nvidia also provides CUDA 
+			support in the form of the CUDA Toolkit, providing parallel algorithm support, CUDA signal processing, and 
+			CUDA linear algebra libraries. This allows CUDA code to be easily fitted upon the existing C code.</p> 
+		<p>
+		</p>
 
           <p> Of course, not all programmers are necessarily interested in diving into CUDA programming, and there are other 
 	      interfaces to take command of the GPU. Some commonly applied libraries are OpenCL, OpenACC, Numba, and CUDA. 
 	      These libraries allow programmers to have easy access to the GPU, and also allows them to execute traditional GPU 
 	      applications, granting them powerful control over the specific application of the GPU. Numba is a python library 
-	      with inbuilt functions that allow quick and easy access to the GPU, with specific lines to specify the parts of code to be executed in parallel. Numba is based around the syntax of NumPy and Scipy, common libraries for handling the representation of code as matrices for mathematical computation. Numba compiles simultaneously for the CPU and the GPU and dramatically increases array processing [20]. </p> 
-
+	      with inbuilt functions that allow quick and easy access to the GPU, with specific lines to specify the parts of code 
+	      to be executed in parallel. Numba is based around the syntax of NumPy and Scipy, common libraries for handling the 
+	      representation of code as matrices for mathematical computation. Numba compiles simultaneously for the CPU and the GPU 
+	      and dramatically increases array processing [20]. </p> 
+		
           <p> OpenACC provides similar support, though in the C language. OpenACC accomplishes parallel programming via a series of 
 	      simple, easy-to-understand preprocessor directives. Once the environment has been properly set up, the parallelism is 
 	      fairly straight-forward to achieve. However, OpenACC isn’t simply restricted to these low-level applications, and is 
 	      powerful enough to give users control over the ways they desire to parallelize loops and allocate data.</p> 
 		
-          <p>Nvidia provides many Software Development Kits (SDKs) that simplify any new engineer's interactions with GPUs. It is leaps and bounds above its competitors AMD and Intel in providing resources to hobbyists or individual engineers. (Nevertheless, all three companies actively engage in collaborations with universities and other corporations). SDKs are like coding libraries but designed to specifically suit the capabilities of an Nvidia system.</p>
+	  <h1 class="section-heading">Nvidia SDKs</h2>
+		<p>Nvidia provides many Software Development Kits (SDKs) that simplify any new engineer's interactions with GPUs. It is leaps and bounds above its competitors AMD and Intel in providing resources to hobbyists or individual engineers. (Nevertheless, all three companies actively engage in collaborations with universities and other corporations). SDKs are like coding libraries but designed to specifically suit the capabilities of an Nvidia system.</p>
 
-          <p>The JetPack SDK is probably the best place to start when approaching a new Nvidia system. It allows new users to set up their embedded devices with an operating system and proprietary software <a href="index.html">[5]</a>. NVIDIA Jetpack is an SDK package equipped with several tools to assist in the building of AI applications, providing support to the AGX Xavier, TX2, TX1, and Jetson Nano. It is also referred to as the Nvidia SDK Manager.</p>
+		<p>The JetPack SDK is probably the best place to start when approaching a new Nvidia system. It allows new users to set up their embedded devices with an operating system and proprietary software <a href="index.html">[5]</a>. NVIDIA Jetpack is an SDK package equipped with several tools to assist in the building of AI applications, providing support to the AGX Xavier, TX2, TX1, and Jetson Nano. It is also referred to as the Nvidia SDK Manager.</p>
 
-          <p>The Nvidia SDK Manager requires two hardware components. First, the user must have a host computer running Ubuntu 16.04 or 18.04, a working Internet connection, and a Jetson device [5]. The host device must have a minimum of 40GB of free disk space whereas the Jetson must have at least 25GB of free disk space. Once a USB 2.0 connection has been established between the two devices, the Jetson can be easily set up with the host computer. </p>
+		<p>The Nvidia SDK Manager requires two hardware components. First, the user must have a host computer running Ubuntu 16.04 or 18.04, a working Internet connection, and a Jetson device [5]. The host device must have a minimum of 40GB of free disk space whereas the Jetson must have at least 25GB of free disk space. Once a USB 2.0 connection has been established between the two devices, the Jetson can be easily set up with the host computer. </p>
 
           <p>The SDK has a GUI which guides the user on setting up the Jetson as well as any additional packages that need to be installed [6]. This is the only way to put an operating system onto the Jetson. The SDK manager can be used later to update the SDK installation on the system [7].</p>
 
