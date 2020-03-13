@@ -412,7 +412,7 @@ footer .copyright {
 
 
 /*----- Drop-Down Menu -----*/
-.menu li:hover .sub-menu {
+.mainNav li:hover .sub-menu {
 	z-index:1;
 	opacity:1;
 }
