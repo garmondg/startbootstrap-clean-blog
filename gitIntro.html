@@ -86,29 +86,43 @@
 
 	<h3>Step 1: Installing Git</h3>
 
-	<p>To start, you will need to download Git. If you have a Windows computer, click <a href=https://git-scm.com/download/win">here</a>. On macOS, open up OSX Terminal and type <code>git --version</code>, and you will be prompted to install it if it was not already. </p>
+		<p>To start, you will need to download Git. If you have a Windows computer, click <a href=https://git-scm.com/download/win">here</a>. On macOS, open up OSX Terminal and type <code>git --version</code>, and you will be prompted to install it if it was not already. </p>
   
 	<h3>Step 2: Using the terminal to create a repository.</h3>
 
-	<p>Open up your terminal (Windows Command Prompt on Windows or OS X Terminal on Macintosh). First, type in the word "git", and hit enter, just to make sure it installed correctly. From there, it's time to create the folder to host your repository. Type <code>mkdir folderName</code>, where folderName is the name of your repository. This will create a folder (or, director) with that name. To enter that folder, type <code>cd folderName</code>. </p>
+		<p>Open up your terminal (Windows Command Prompt on Windows or OS X Terminal on Macintosh). First, type in the word "git", and hit enter, just to make sure it installed correctly. From there, it's time to create the folder to host your repository. Type <code>mkdir folderName</code>, where folderName is the name of your repository. This will create a folder (or, director) with that name. To enter that folder, type <code>cd folderName</code>. </p>
 
 	<h3>Step 3: Creating the ReadMe</h3>
 
-	<p>The ReadMe file in a repository contains information about the other files in the repository. It should say what's included in the repository, like is seen in the first section of this file. In order to create a ReadMe for your preexisting directory, like the one you're in now,, type <code>echo "# folderName" >> README.md</code>.</p>
-	<p>With the ReadMe created, it's time to access Git. Type <code>git init</code> to intiialize Git within this directory. Now, it's always good to know when changes have occued to a file. To do so, type <code>git add README.md</code>. You can do this for any file that you want the history of changes to be saved for.</p> 
+		<p>The ReadMe file in a repository contains information about the other files in the repository. It should say what's included in the repository, like is seen in the first section of this file. In order to create a ReadMe for your preexisting directory, like the one you're in now,, type <code>echo "# folderName" >> README.md</code>.</p>
+		<p>With the ReadMe created, it's time to access Git. Type <code>git init</code> to intiialize Git within this directory. Now, it's always good to know when changes have occued to a file. To do so, type <code>git add README.md</code>. You can do this for any file that you want the history of changes to be saved for.</p> 
 
 	<h3>Step 4: Creating a Commit</h3>
-	<p>A "Commit", in the Git world, is more or less how you save a change to a repository. It is a statement that you are commiting to the changes that you have made. In order to do this for the first time in a directory, type <code>git commit -m "first commit"</code>. </p>
+		<p>A "Commit", in the Git world, is more or less how you save a change to a repository. It is a statement that you are commiting to the changes that you have made. In order to do this for the first time in a directory, type <code>git commit -m "first commit"</code>. </p>
 
 	<h3>Step 5: Creating a GitHub repository</h3>
 
-	<p>Now, you'll need to be sure you have a Github account. Once you do, go to <a href="github.com">the GitHub website</a> and choose "Start a project".</p>
-	<p>From here, you will find yourself entering the basic information for your repository. The name, the owner, whether or not the project is publicly accessible, etc. Once all that is filmed out, click "Create repository".</p>
+		<p>Now, you'll need to be sure you have a Github account. Once you do, go to <a href="github.com">the GitHub website</a> and choose "Start a project".</p>
+		<p>From here, you will find yourself entering the basic information for your repository. The name, the owner, whether or not the project is publicly accessible, etc. Once all that is filmed out, click "Create repository".</p>
 
 	<h2>Step 6: Exporting a respository to GitHub</h2>
 
-	<p>It's finally time to upload this directory to GitHub. From the command terminal, type <code>git remote add origin https://github.com/yourUsername/folderName.git</code>. This code adds a remote named Origin to the address listed in the code. Origin is just a placehoder name, so if you want to use another name you can.</p>
-
+		<p>It's finally time to upload this directory to GitHub. From the command terminal, type <code>git remote add origin https://github.com/yourUsername/folderName.git</code>. This code adds a remote named Origin to the address listed in the code. Origin is just a placehoder name, so if you want to use another name you can.</p>
+	
+<h2 class="section-heading">Selected Git Applications</h2>
+		
+	<p>There are a number of applications that can be used to access the Git command line. A few suggested applications are listed below:</p>
+			
+		<h2><a href="https://desktop.github.com/">GitHub Desktop</a></h2>
+			
+			<p>GitHub desktop is a first party extension of GitHub that allows users to access their repositories directly on their PC. It's the first application suggested for use when a project is being hosted on GitHub. Most regular Git and GitHub operations are available directly through this app, and changes can be very easily tracked through this system. Generally, GitHub Desktop should be used unless another app has something specific that your project needs. It is available for both Windows and MacOS.</p>
+			
+		<h2><a href="https://www.sourcetreeapp.com/">Sourcetree</a></h2>
+			
+			<p>Sourcetree is a simplified Git platform that seeks to simplify the project of hosting a project with Git. It allows for easy visualization of code, as well as a simplified project structure. It's easy for beginners to learn, but loses some functionality from othre apps, such as the command line. Sourcetree is available for both Windows and MacOS. </p>
+		
+		<h2><a href="https://www.gitkraken.com/">GitKraken</a></h2>
+			
         </div>
       </div>
     </div>

@@ -81,7 +81,9 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
 		<p> PyTorch is quickly becoming the hottest machine-learning. The following examples should get you started
-		    on basic PyTorch applications.</p>
+		    on basic PyTorch applications. It has a number of different applications, extending beyond its original purpose 
+		    of develping machine learning algorithms. The following examples explore just of PyTorch's capbilities, including
+		    loading a pre-trained data-set, accessing GPU information, and parallel processing using a GPU. </p>
 		
 
 		<h2 class="subheading">Loading a Dataset</h2>
@@ -121,14 +123,16 @@
 		  </pre>
 		
 		<h2 class="subheading">Parallel Programming</h2>
-		<p> </p>
+		<p> Another powerful capability of PyTorch is the ease with which it grants a user access to parallel 
+		processing algorithms. Depending on application, this can be a good alternative to using CUDA or some other
+		GPGPU interface. </p>
 		<code>
-			a = torch.DoubleTensor([1., 2.])
+			a = torch.DoubleTensor([1., 2.]) //create a tensor on the CPU
 		  </code>
 		  </pre>
 		<p> </p>
 		<code>
-	      a = torch.FloatTensor([1., 2.]).cuda()
+	      a = torch.FloatTensor([1., 2.]).cuda() //create a tensor on the GPU
 	        </code>
 		  </pre>
 	    <p> </p>
