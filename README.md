@@ -5,6 +5,7 @@ This GitHub repository serves as a place to store example files, as well as serv
 <h1>The Contents of this Repository</h1>
 
 <ul>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/codeExamples">codeExamples Folder</a>: A folder containing the GPU example code.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/css">CSS Folder</a>: A folder containing all Cascading Styling Sheets (CSS's) for the website.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/img">IMG Folder</a>: A folder containing all images used on the website.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/js">JS Folder</a>: A folder containing all Javascript files for the website.</li>
