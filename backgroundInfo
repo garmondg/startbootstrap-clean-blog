@@ -41,6 +41,9 @@
           <li class="nav-item">
             <a class="nav-link" href="quickStartGuide.html">QUICKSTART</a>
           </li>
+	  <li class="nav-item">
+            <a class="nav-link" href="backgroundInfo.html">BACKGROUND INFORMATION</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="hardware.html">HARDWARE</a>
           </li>
