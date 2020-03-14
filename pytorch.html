@@ -80,18 +80,18 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-		<p> PyTorch is quickly becoming the hottest machine-learning. The following examples should get you started
-		    on basic PyTorch applications. It has a number of different applications, extending beyond its original purpose 
-		    of develping machine learning algorithms. The following examples explore just of PyTorch's capbilities, including
-		    loading a pre-trained data-set, accessing GPU information, and parallel processing using a GPU. </p>
-		
+        <p> PyTorch is quickly becoming the hottest machine-learning. The following examples should get you started
+            on basic PyTorch applications. It has several different applications, extending beyond its original purpose 
+		of developing machine learning algorithms. The following examples explore just of PyTorch's capabilities, 
+		including loading a pre-trained data-set, accessing GPU information, and parallel processing using a GPU. </p>
+        
 
-		<h2 class="subheading">Loading a Dataset</h2>
-		<p> Machine learning algorithms can generate models which are then easily used by other applications. PyTorch,
-			like other application interfaces allow for quick loading of existing models. Though PyTorch comes with
-			existing models, you may have to find models from other resources online. The following is an example of
-			how to load the DarkNet dataset.
-		</p>
+        <h2 class="subheading">Loading a Dataset</h2>
+        <p> Machine learning algorithms can generate models that are then easily used by other applications. PyTorch,
+            like other application interfaces, allows for quick loading of existing models. Though PyTorch comes with 
+		existing models, you may have to find models from other resources online. The following is an example 
+		of how to load the DarkNet dataset.
+        </p>
 		    
 
           <pre style="height: 500px; overflow: scroll;">
@@ -112,7 +112,7 @@
 		  </pre>
 
 		<h2 class="subheading">Accessing the GPU</h2>
-		<p> Accessing the GPU info is starighforward and well-defined under torch.cuda.</p>
+		<p> Accessing the GPU info is straightforward and well-defined under torch.cuda.</p>
        
 		<pre style="height: 500px; overflow: scroll;">
 		  <code>
@@ -124,26 +124,26 @@
 		
 		<h2 class="subheading">Parallel Programming</h2>
 		<p> Another powerful capability of PyTorch is the ease with which it grants a user access to parallel 
-		processing algorithms. Depending on application, this can be a good alternative to using CUDA or some other
-		GPGPU interface. </p>
+        processing algorithms. Depending on the application, this can be a good alternative to using CUDA or some other
+        GPGPU interface. </p>
 		
-		<pre style="height: 150px; overflow: scroll;">
+		<pre style="height: 200px; overflow: scroll;">
 		<code>
 			a = torch.DoubleTensor([1., 2.]) //create a tensor on the CPU
 		  </code>
 		  </pre>
 		
 		<p> </p>
-		<pre style="height: 150px; overflow: scroll;">
+		<pre style="height: 200px; overflow: scroll;">
 		<code>
 		a = torch.FloatTensor([1., 2.]).cuda() //create a tensor on the GPU
 	        </code>
 		</pre>
 		
 		<h2 class="subheading">Other Capabilities of PyTorch</h2>
-		<p>PyTorch provides support for host of different functions, including loading datasets from MNIST and ImageNet, as 
-			well as support for RNNs. These models are easy to load and can be applied to a number of different functiosn.
-			Furthermore, the datatypes favor easy interfacing with OpenCV for a variety of porgramming applications./p>
+		<p>PyTorch provides support for a host of different functions, including loading datasets from MNIST and ImageNet, as 
+            well as support for RNNs. These models are easy to load and can be applied to several different functions.
+            Furthermore, the datatypes favor easy interfacing with OpenCV for a variety of programming applications.</p>
 		
         </div>
       </div>
