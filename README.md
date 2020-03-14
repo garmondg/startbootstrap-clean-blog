@@ -11,6 +11,7 @@ This GitHub repository serves as a place to store example files, as well as serv
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/mail">Mail Folder</a>: A folder containing files that can establish a "Contact Us" page.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/scss">SCSS Folder</a>: A folder containing all Sassy Cascading Styling Sheets (SCSS's) for the website.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/vendor">Vendor Folder</a>: A folder containing all CSS Vendor prefixes for the website.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/backgroundInfo.html">backgroundInfo.html file</a>: A file that contains the contents of the Background Info webpage.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/.browserslistrc">.browserslistrc File</a>: A file that contains information regarding different browsers the website could run on.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/.gitignore">.gitignore File</a>: A file thatspecifies files to ignore.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/.travis.yml">.travis.yml File</a>: A file that contains Travis CI build configurations.</li>
