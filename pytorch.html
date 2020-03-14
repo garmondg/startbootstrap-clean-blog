@@ -126,16 +126,23 @@
 		<p> Another powerful capability of PyTorch is the ease with which it grants a user access to parallel 
 		processing algorithms. Depending on application, this can be a good alternative to using CUDA or some other
 		GPGPU interface. </p>
+		
+		<pre style="height: 500px; overflow: scroll;">
 		<code>
 			a = torch.DoubleTensor([1., 2.]) //create a tensor on the CPU
 		  </code>
 		  </pre>
+		
 		<p> </p>
+		<pre style="height: 500px; overflow: scroll;">
 		<code>
-	      a = torch.FloatTensor([1., 2.]).cuda() //create a tensor on the GPU
+		a = torch.FloatTensor([1., 2.]).cuda() //create a tensor on the GPU
 	        </code>
-		  </pre>
-	    <p> </p>
+		</pre>
+		
+		<h2 class="subheading">Other Capabilities of PyTorch</h2>
+		<p>PyTorch provides support for host of different functions, including loading datasets from MNIST and iamgenet, as 
+			well as support for RNNs. /p>
 		
         </div>
       </div>
