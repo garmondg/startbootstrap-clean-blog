@@ -31,5 +31,5 @@ This GitHub repository serves as a place to store example files, as well as serv
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/quickStartGuide.html">quickStartGuide.html File</a>: A file that contains the contents of the Quickstart Guide webpage.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/resources.html">resource.html File</a>: A file that contains the contents of the Resources webpage.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/sdk.html">sdk.html File</a>: A file that contains the contents of the Nvidia SDKs webpage.</li>
-  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/index.html">software.html File</a>: A file that contains the contents of the Software webpage.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/index.html">software.html File</a>: A file that contains the contents of the Software webpage and code examples.</li>
 </ul>
