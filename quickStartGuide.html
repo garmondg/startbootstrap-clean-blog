@@ -84,7 +84,8 @@
         <h2 class="section-heading">System Dependencies</h2>
           <p>Settig up an Nvidia development kit requires two computers a host computer and a receiver. You must have a system running 
              Ubuntu 16.04 or 18.04 to install the system. The connection to between the two devices will be established with a USB to
-             type 3 connector. Be warned that different versions of the SDKs are associated with different versions of Ubuntu. </p>
+             type 3 connector. Be warned that different versions of the SDKs are associated with different versions of Ubuntu.</p>
+        <p>The host computer must have an Intel or AMD x86 processor, as the Jetson uses an ARM-based machine that cannot run the pack itself. </p>
  
         <h2 class="section-heading">ROS Dependencies</h2>
           <p>There are two versions of ROS. ROS and ROS2. This particular set of instructions will demonstrate the implementation of
@@ -136,26 +137,7 @@
         
       <h2 class="section-heading">Onboard Software</h2>
         
-      <p>The "Jetson Software Stack" is a group of software that all Jetson processors can run. A brief introduction toa few of them can is listed below.</p>
-        
-<img src="img/embedded-jetson-sw-stack-diagram-update-990573-r3.jpg">
-        <p>Image courtesy of NVIDIA</p>
-        
-        <h3>DeepStream SDK</h3>
-        
-        <p>DeepStream SDK is an analytics kit that provides tools for AI development, image understanding, and multi-sensor processing. It allows for visualization of rich data, allowing for a better understanding of how the GPU is processing that data. More information can be found <a href="https://developer.nvidia.com/deepstream-sdk">here</a>.</p>
-        
-        <h3>Isaac SDK</h3>
-          
-        <p>Isaac SDK is a robot AI development platform created by NVIDIA. It provides a framework, references, precreated algorithms, and an advanced simulation platform in order to allow for AI to be fully designed before it is implemented in the robot. More information can be found <a href="https://developer.nvidia.com/isaac-sdk">here</a>.</p>
-        
-        <h3>JetPack SDK</h3>
-        
-        <p>The JetPack SDK is a suite of tools desgined specifically for use with the Jetson series of processors. It's the most efficient way to install developer tools and libraries, as well as to program the Jetson. It also provides updated versions of popular tools such as TensorRT and cuDNN. More information can be found <a href="https://developer.nvidia.com/embedded/jetpack">here</a>.</p>
-        
-        <h3>Nsight Developer Tools</h3>
-        
-        <p>The Nsight Developer Tools are a trio of linked tools that help developers optimize the performance of their processors. The first of these is Nsight Systems, which analyzes workload-level performance, optimizing the synchronization of the different parts of the system. The next is Nsight Compute, which analyzes the performance at the Kernel level, optimizing memory access, kernel implementation, and teh utilization of the GPU. The third and final part of the set is Nsight Graphics, which analyzes performance frame-by-frame. Shaders, frame rendering, and synchronization are all optimized by this tool. The developer can go back and forth between all three of these cyclically until such a time as the performance meets expectations. More information can be found <a href="https://developer.nvidia.com/tools-overview">here</a>.</p>
+      <p>The "Jetson Software Stack" is a group of software that all Jetson processors can run. A brief introduction to a few of them can be seen on <a href="https://osusdgpu.github.io/sdk.html">our software page.</a></p>
             
       </div>
     </div>
