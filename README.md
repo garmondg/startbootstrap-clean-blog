@@ -5,6 +5,9 @@ This GitHub repository serves as a place to store example files, as well as serv
 <h1>The Contents of this Repository</h1>
 
 <ul>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/Block_Diagram">Block Diagram Folder</a>: A folder containing the project's Block Diagram.</li>
+    <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/ClientUpdates">ClientUpdates Folder</a>: A folder containing the team's Client Update emails.</li>
+    <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/Weekly_Meetings">Weekly Meetings Folder</a>: A folder containing the meeting notes for every meeting the team had over the course of the year.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/codeExamples">codeExamples Folder</a>: A folder containing the GPU example code.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/css">CSS Folder</a>: A folder containing all Cascading Styling Sheets (CSS's) for the website.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/img">IMG Folder</a>: A folder containing all images used on the website.</li>
@@ -14,8 +17,10 @@ This GitHub repository serves as a place to store example files, as well as serv
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/vendor">Vendor Folder</a>: A folder containing all CSS Vendor prefixes for the website.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/backgroundInfo.html">backgroundInfo.html file</a>: A file that contains the contents of the Background Info webpage.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/.browserslistrc">.browserslistrc File</a>: A file that contains information regarding different browsers the website could run on.</li>
-  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/.gitignore">.gitignore File</a>: A file thatspecifies files to ignore.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/.gitignore">.gitignore File</a>: A file thatspecifies files to ignore Git.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/.travis.yml">.travis.yml File</a>: A file that contains Travis CI build configurations.</li>
+    <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/DesignReview.pdf">DesignReview Document</a>: The project summary file.</li>
+    <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/Final_Client_Thank_You_Letter.pdf">Client Thank-you Letter</a>: The final Client Thank-You Letter sent as part of the Closeout Packet.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/LICENSE">LICENSE File</a>: A file that contains the licensing agreement for use of the website files and format.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/blob/master/ProjectVideo.md">ProjectVideo.md</a>: A Link to the Virtual Expo Video.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/README.md">README.md File</a>: This ReadMe document.</li>
