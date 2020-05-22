@@ -17,6 +17,7 @@ This GitHub repository serves as a place to store example files, as well as serv
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/.gitignore">.gitignore File</a>: A file thatspecifies files to ignore.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/.travis.yml">.travis.yml File</a>: A file that contains Travis CI build configurations.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/LICENSE">LICENSE File</a>: A file that contains the licensing agreement for use of the website files and format.</li>
+  <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/blob/master/ProjectVideo.md">ProjectVideo.md: A Link to the Virtual Expo Video.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/README.md">README.md File</a>: This ReadMe document.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/gitIntro.html">gitIntro.html File</a>: A file that contains the contents of the Git Intro webpage.</li>
   <li><a href="https://github.com/osusdgpu/osusdgpu.github.io/tree/master/glossary.html">glossary.html File</a>: A file that contains the contents of the Glossary webpage.</li>
